@@ -1,0 +1,17 @@
+﻿body {
+
+}
+
+#pascal {
+
+}
+
+.sor {
+    flex-direction:row
+}
+
+.elem{
+    height: 30px;
+    width: 30px;
+
+}
