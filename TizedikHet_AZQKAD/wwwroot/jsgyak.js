@@ -1,20 +1,25 @@
-﻿for (var sor = 0; sor < 10; sor++) {
-    //új div létrehozása az új sornak
-    //új div osztálylistájához add hozzá a "sor"-t
-    //új div-et add hozzá a "pascal" gyermekeihez
-    for (var oszlop = 0; oszlop <= sor; oszlop++) {
-        //új div létrehozása az új elemnek
-        //új elem div osztálylistájához add hozzá az "elem"-et
-        //teszteléshet .innerHTML = `${sor}:${oszlop}`
-        //legyen az innerHTML a megfelelő szám
-        //új elem div-et vedd fel a sor elemei közé
+﻿var faktoriálisR = (n) => {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n = faktoriálisR(n-1)
+    }
     }
 }
 
-var faktoriális = function (n) {
-    let er = 1;
-    for (let i = 2; i <= n; i++) {
-        er = er * i;
+window.onload = {} => {
+    for (var sor = 0; sor < 10; sor++) {
+
+        var újdiv = document.createElement("div")
+        údjiv.classList.add("sor")
+        document.getElementById("Pascal").appendChild(újdiv)
+
+        for (var oszlop = 0; oszlop <= sor; oszlop++) {
+
+            var másikújdiv = document.createElement("div")
+            másikújdiv.classList.add("elem")
+            másikújdiv.innerHTML = | '${sor}:${oszlop}'
+            újdiv.appendChild(másikújdiv)
+        }
     }
-    return er;
 }
